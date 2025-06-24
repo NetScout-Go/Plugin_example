@@ -1,27 +1,31 @@
 {
-  "id": "example",
-  "name": "Example Plugin",
+  "author": "NetScout-Go",
   "description": "An example plugin that demonstrates how to create a modular plugin",
   "icon": "code",
+  "id": "example",
+  "license": "MIT",
+  "name": "Example Plugin",
   "parameters": [
     {
+      "default": "Hello, NetScout!",
+      "description": "A message to echo back",
       "id": "message",
       "name": "Message",
-      "description": "A message to echo back",
-      "type": "string",
       "required": true,
-      "default": "Hello, NetScout!"
+      "type": "string"
     },
     {
-      "id": "repeat",
-      "name": "Repeat Count",
-      "description": "Number of times to repeat the message",
-      "type": "number",
-      "required": false,
       "default": 1,
-      "min": 1,
+      "description": "Number of times to repeat the message",
+      "id": "repeat",
       "max": 10,
-      "step": 1
+      "min": 1,
+      "name": "Repeat Count",
+      "required": false,
+      "step": 1,
+      "type": "number"
     }
-  ]
+  ],
+  "repository": "https://github.com/NetScout-Go/Plugin_example",
+  "version": "1.0.0"
 }
